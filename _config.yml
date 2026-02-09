@@ -1,0 +1,22 @@
+title: Christophe Loyer - Développeur Confirmé
+description: CV et portfolio de Christophe Loyer, développeur passionné par le code propre et maintenable.
+theme: jekyll-theme-minimal
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+header_pages:
+
+defaults:
+  scope:
+    path: ""
+    type: "pages"
+  values:
+    layout: default
+
+social:
+  name: Christophe Loyer
+  links:
+    - https://github.com/chris-tophe
+    - mailto:christophe.loyer@gmail.com
