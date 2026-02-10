@@ -275,32 +275,55 @@ a:hover {
     font-size: 0.9rem;
 }
 
-/* Skills Section */
-.skills-grid {
+/* Expertise Section */
+.expertise-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
 }
 
-.skill-category h3 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-}
-
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.tag {
-    padding: 0.4rem 0.85rem;
-    background: var(--bg-secondary);
+.expertise-card {
+    background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 5px;
-    font-size: 0.85rem;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.expertise-card:hover {
+    border-color: var(--accent);
+}
+
+.expertise-card h3 {
+    font-size: 1rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.expertise-list {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.expertise-list li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
     color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.expertise-list li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+.expertise-tech {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    padding-top: 0.75rem;
 }
 
 /* Timeline */
